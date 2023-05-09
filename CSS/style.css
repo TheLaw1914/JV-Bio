@@ -1,0 +1,296 @@
+ 
+*{
+  margin: 0;
+  padding: 0;
+}
+/*================Nav Menu Start============*/
+.navbar-left>img{
+  height: 60px;
+  width: 65px;
+  margin-left: -100px;
+  } 
+
+.navbar{
+  padding: 22px 0px;
+  border-bottom: none ! important;
+}
+
+.navbar ul li a{
+  color: white ! important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}
+ 
+.navbar ul li a:hover .navbar ul li a:focus{
+  color: deepskyblue !important;
+}   
+
+
+.navbar-toggle{
+    border:1px solid white !important;
+    transition: all 0.5s ease-in;
+   }
+   
+.navbar-toggle:hover{
+    background-color: deepskyblue !important;
+    transition: all 0.5s ease-in;
+  }
+
+.navbar-inverse .navbar-collapase{
+  border-color: transparent !important ;
+}
+
+.navbar-inverse{
+  background-color: transparent !important;
+}
+   
+  /*============ Nav Menu End ===============*/
+
+  .Experience{
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+
+ /*===========Slider Starts=============*/
+.slider{
+  width: 100%;
+  height: 100vh;
+  background: url("/Img/background-futuristic-horizon_23-2148314230.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.slider-overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  color: white;
+}
+
+.slider-content{
+  position: absolute;
+  top: 39%;
+  width: 100%;
+}
+
+.icons .fa{
+  font-size: 35px;
+  margin-right: 7px ;
+}
+
+.btn1{
+  padding: 10px 18px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 2px solid white;
+  border-bottom-left-radius: 15px;
+  transition: all 0.5s ease-in;
+  margin-right: -6px;
+}
+
+.btn1:hover{
+  text-decoration: none;
+  color: white;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+}
+
+.btn2{
+  padding: 10px 18px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 2px solid white;
+  border-top-right-radius: 15px;
+  transition: all 0.5s ease-in;
+}
+
+.btn2:hover{
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+  border-color: orangered;
+}
+
+.social-networks a.fa{
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  margin-right: 2px;
+  transition: all 0.5s ease-in
+}
+
+.social-networks a.fa:hover{
+  text-decoration: none;
+  background-color: deepskyblue;
+  color: white;
+  border: 1px solid deepskyblue;
+  transition: all 0.5s ease-in
+}
+
+.slider .text {
+  display:inline;
+  font-size: 35px;
+  text-transform: uppercase;
+  animation: blink 0.7s infinite;
+}
+
+
+.primary{
+  color: orangered;
+}
+
+.secondary{
+  color: deepskyblue;
+}
+/*==================Slider Ends==============*/
+
+/*=================Skill style starts============*/
+.skills-area{
+  margin-top: 30px;
+}
+
+.skills-area p{
+margin-bottom: -5px;
+}
+
+.skill-wrap{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  padding: 25px 35px;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  z-index: 9;
+  margin-top: 20px;
+}
+
+.skill-wrap::before, .skill-wrap::after{
+  content: "";
+  height: 300%;
+  position: absolute;
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #34495e;
+}
+
+
+.skill-wrap::before{
+  top: -37px;
+  left: 100%;
+}
+
+.skill-wrap:hover::before{
+  left: -27px;
+  opacity: 1;
+}
+
+.skill-wrap::after{
+  right: 100%;
+  bottom: -37px;
+}
+
+.skill-wrap:hover:after{
+  right: -27;
+  opacity: 1;
+}
+
+.skill-wrap:hover{
+  color: white;
+}
+
+.skill-wrap:h3{
+  color: white;
+}
+
+.skill-wrap:hover h3{
+  color: white;
+}
+
+.skill-wrap:hover h3:after{
+  color: white;
+  background-color: white;
+}
+
+.skill-icon i{
+  font-size: 30px;
+  margin-bottom:20px;
+  transition: all 0.5s;
+}
+
+.skill-wrap:hover .skill-icon i{
+  transform: rotate(360deg);
+}
+
+.skill-wrap h3{
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.skill-wrap p{
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/*=================Skill style ends============*/
+
+/*=================Work style starts============*/
+.row.no-gutters [class*=col-]{
+  padding-left: 0 ;
+  padding-right: 0;
+}
+
+.img-wrapper{
+  overflow: hidden;
+}
+
+.img-wrapper img{
+  transition: transform 0.5s ease;
+  width: 100% ;
+}
+
+.img-wrapper img:hover{
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+/*=================work style ends============*/
+#Joel{
+  height: 310px;
+  width: 260px;
+  border-radius: 50%;
+  box-shadow:0 4px 8px rgba(0,0,0,0.7);;
+}
+
+.about{
+font-size: large;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.front-end{
+  font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.offer{
+  font-size: x-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.offer2{
+  font-size: large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
